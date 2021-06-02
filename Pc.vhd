@@ -1,7 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-
-subtype CHAR is integer range 0 to 255;
+use ieee.numeric_std.all;
 
 entity PROGRAM_COUNTER is
 
@@ -13,7 +12,7 @@ entity PROGRAM_COUNTER is
 		I_new_address		: in 	STD_LOGIC_VECTOR (7 downto 0);
 		
 		-- Output ports
-		O_program_counter	: out STD_LOGIC_VECTOR (7 downto 0);
+		O_program_counter	: out STD_LOGIC_VECTOR (7 downto 0)
 	);
 	
 end PROGRAM_COUNTER;
@@ -34,7 +33,7 @@ begin
 			if I_jump = '1' then
 				S_internal_program_counter <= I_new_address;
 			else
-				S_internal_program_counter <= S_internal_program_counter + 1;
+				S_internal_program_counter <= std_logic_vector(unsigned(S_internal_program_counter) + 1);
 			end if;
 			
 			O_program_counter <= S_internal_program_counter;
