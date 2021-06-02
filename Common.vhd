@@ -11,10 +11,10 @@ constant FLAG_BIT_CARRY:				integer := 0;
 
 -- Inherent
 constant OPCODE_CLEAR_ACCU:    		std_logic_vector(7 downto 0) :=  "00000000";
-constant OPCODE_CLEAR_NEGATIV_FLAG:	std_logic_vector(7 downto 0) :=  "00000001";
+constant OPCODE_CLEAR_NEGATIVE_FLAG:	std_logic_vector(7 downto 0) :=  "00000001";
 constant OPCODE_CLEAR_ZERO_FLAG:    std_logic_vector(7 downto 0) :=  "00000010";
 constant OPCODE_CLEAR_CARRY_FLAG:   std_logic_vector(7 downto 0) :=  "00000011";
-constant OPCODE_SET_NEGATIV_FLAG:   std_logic_vector(7 downto 0) :=  "00000100";
+constant OPCODE_SET_NEGATIVE_FLAG:   std_logic_vector(7 downto 0) :=  "00000100";
 constant OPCODE_SET_ZERO_FLAG:    	std_logic_vector(7 downto 0) :=  "00000101";
 constant OPCODE_SET_CARRY_FLAG:    	std_logic_vector(7 downto 0) :=  "00000110";
 

@@ -16,8 +16,8 @@ entity entity_alu is
 		I_data		: in  STD_LOGIC_VECTOR (7 downto 0);
 
 		-- Output ports
-		O_data		: out STD_LOGIC_VECTOR (7 downto 0);
-		O_jump		: out	STD_LOGIC
+		O_data		: out STD_LOGIC_VECTOR (7 downto 0) := X"00";
+		O_flags		: out STD_LOGIC_VECTOR (2 downto 0) := "000"
 	);
 	
 end entity_alu;
@@ -26,62 +26,64 @@ architecture arch_alu of entity_alu is
 
 	-- Declarations
 	signal S_accu	: STD_LOGIC_VECTOR (8 downto 0);
-	signal S_flags	: STD_LOGIC_VECTOR (2 downto 0);
 
 begin
 
 	process (I_clock)
+	
+	variable V_updateFlags : boolean := false;
+	
 	begin
 		if rising_edge(I_clock) and I_enable = '1' then
 		
 			case I_opcode(7 downto 4) is
 				when OPCODE_ADD =>
-				
-					S_accu <= std_logic_vector(signed(S_accu) + signed(I_data(7) & I_data));
-					
-					if S_accu(8) = '0' then
-						S_flags(FLAG_BIT_CARRY) <= S_accu(7);
-					else
-						
-					end if;
-					
-					O_jump <= '0';
+					-- Perform addition; I_data has to be sign-extended for that
+					S_accu <= std_logic_vector(signed(S_accu) + signed(I_data(7) & I_data));					
+					V_updateFlags := true;
 					
 				when OPCODE_SUB =>
 				
 					S_accu <= std_logic_vector(signed(S_accu) - signed(I_data(7) & I_data));
-					O_jump <= '0';
+					V_updateFlags := true;
 					
 				when OPCODE_MOV =>
 				
-					O_data <= S_accu;
-					O_jump <= '0';
+					O_data <= S_accu(7 downto 0);
 					
 				when OPCODE_JMP =>
 				
-					O_data <= I_data;
-					O_jump <= '1';
-				
-				
+					O_data <= I_data;				
 				
 				when others =>
+				
+					-- TODO:
 					
 			end case;
+			
+						
+			if V_updateFlags = true then		
+			
+				-- Set carry flag if sign bit changes because of over-/underflow
+				if S_accu(8) = '0' then
+					O_flags(FLAG_BIT_CARRY) <= S_accu(7);
+				else
+					O_flags(FLAG_BIT_CARRY) <= not S_accu(7);
+				end if;
+				
+				-- Set zero flag
+				if S_accu = "000000000" then
+					O_flags(FLAG_BIT_ZERO) <= '1';
+				else
+					O_flags(FLAG_BIT_ZERO) <= '0';
+				end if;
+				
+				-- Set negative flag
+				O_flags(FLAG_BIT_NEGATIVE) <= S_accu(8);
+				
+			end if;
+					
 		end if;
 	end process;
-
-	-- Process Statement (optional)
-
-	-- Concurrent Procedure Call (optional)
-
-	-- Concurrent Signal Assignment (optional)
-
-	-- Conditional Signal Assignment (optional)
-
-	-- Selected Signal Assignment (optional)
-
-	-- Component Instantiation Statement (optional)
-
-	-- Generate Statement (optional)
 
 end arch_alu;
