@@ -42,13 +42,10 @@ architecture structural of VHDL_microprocessor is
 	signal dt : STD_LOGIC_VECTOR (7 downto 0);
 
 	begin
-
 		--nbl = 0;
+--		regs_memory: Memory port map (clk, nbl, w_nbl, slct, dt);
 
-		regs_memory: Memory port map (clk, nbl, w_nbl, slct, dt);
-		
-	end;
 
-end structural;
+	end structural;
 
 --EndOfFile
