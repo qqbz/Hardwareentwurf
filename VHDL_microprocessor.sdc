@@ -1,4 +1,6 @@
-# Created file and insert template due to compilation warnings
+# Created file and insert template due to compilation warnings:
+# "Synopsys Design Constraints File file not found: 'VHDL_microprocessor.sdc'. 
+# A SDC File is req. by the TimeQuest Timing Analyzer to get proper timing..."
 
 # TimeQuest -> SDC Commands -> Clocks -> Auto-Generated PLL Clocks
 derive_pll_clocks
