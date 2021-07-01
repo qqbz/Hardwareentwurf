@@ -47,12 +47,48 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_global_assignment -name SEARCH_PATH ../et5000_hardwareentwurf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Test_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME vhdl_microprocessor_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id vhdl_microprocessor_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME vhdl_microprocessor_tb -section_id vhdl_microprocessor_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME Memory_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Memory_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Memory_tb -section_id Memory_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME Pc_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Pc_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Pc_tb -section_id Pc_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME vhdl1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id vhdl1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME vhdl1_tb -section_id vhdl1_tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_NAME Test_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Test_tb -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/VHDL_microprocessor_tb.vhd -section_id vhdl_microprocessor_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Memory_tb.vhd -section_id Memory_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Pc_tb.vhd -section_id Pc_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/vhdl1_tb.vhd -section_id vhdl1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Common.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ControlUnit.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Alu.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Memory.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Decoder.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Test1_tb.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Rom.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Pc.vhd -section_id Test_tb
+set_global_assignment -name VHDL_FILE simulation/modelsim/Test1_tb.vhd
+set_global_assignment -name VHDL_FILE simulation/modelsim/Pc_tb.vhd
+set_global_assignment -name VHDL_FILE simulation/modelsim/Memory_tb.vhd
+set_global_assignment -name VHDL_FILE simulation/modelsim/Alu_tb.vhd
 set_global_assignment -name VHDL_FILE VHDL_microprocessor.vhd
 set_global_assignment -name VHDL_FILE Pc.vhd
 set_global_assignment -name VHDL_FILE Memory.vhd
@@ -60,4 +96,6 @@ set_global_assignment -name VHDL_FILE Decoder.vhd
 set_global_assignment -name VHDL_FILE Common.vhd
 set_global_assignment -name VHDL_FILE Alu.vhd
 set_global_assignment -name SDC_FILE VHDL_microprocessor.sdc
+set_global_assignment -name VHDL_FILE ControlUnit.vhd
+set_global_assignment -name VHDL_FILE Rom.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

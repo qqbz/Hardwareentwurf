@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/VHDL_microprocessor.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/VHDL_microprocessor.sdc
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/db/VHDL_microprocessor.cbx.xml
+design_name = VHDL_microprocessor
+instance = comp, \clk~input\, clk~input, VHDL_microprocessor, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, VHDL_microprocessor, 1

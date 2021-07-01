@@ -7,49 +7,46 @@ library ieee;
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 
-entity entity_memory is
+entity memory_entity is
 	port
 	(
 		-- Input ports
-		I_clock			: in  STD_LOGIC;
+		I_clock				: in STD_LOGIC;
 		I_enable			: in STD_LOGIC;
-		I_write_enable	: in STD_LOGIC;
-		I_reg_select	: in STD_LOGIC_VECTOR (7 downto 0);
-		I_reg_data		: in STD_LOGIC_VECTOR (7 downto 0);
+		I_writeEnable		: in STD_LOGIC;
+		I_regReadSelect		: in STD_LOGIC_VECTOR (7 downto 0);
+		I_regWriteSelect	: in STD_LOGIC_VECTOR (7 downto 0);
+		I_regWriteData		: in STD_LOGIC_VECTOR (7 downto 0);
 
 		-- Output ports
-		O_reg_data		: out STD_LOGIC_VECTOR (7 downto 0)
+		O_regReadData		: out STD_LOGIC_VECTOR (7 downto 0)
 	);
-end entity_memory;
+end memory_entity;
 
+architecture memory_arch of memory_entity is
 
--- Library Clause(s) (optional)
--- Use Clause(s) (optional)
-
-architecture arch_memory of entity_memory is
-
-	-- Declarations (optional)
-	type T_store is array (0 to 255) of std_logic_vector(7 downto 0);
-	signal S_regs: T_store := (others => X"00");
+	-- Declarations
+	type T_regs is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
+	signal S_regs: T_regs := (others => X"00");
 
 begin
 
-	-- Process Statement (optional)
+	-- Process Statement
 	process(I_clock)
 	begin
 		
 		if rising_edge(I_clock) and I_enable = '1' then
-		
-			O_reg_data <= S_regs(to_integer(unsigned(I_reg_select)));
-			
-			if I_write_enable = '1' then
 				
-				S_regs(to_integer(unsigned(I_reg_select))) <= I_reg_data;
+			O_regReadData <= S_regs(to_integer(unsigned(I_regReadSelect)));
 			
+			if I_writeEnable = '1' then
+				
+				S_regs(to_integer(unsigned(I_regWriteSelect))) <= I_regWriteData;
+				
 			end if;
 			
 		end if;
 		
 	end process;
 
-end arch_memory;
+end memory_arch;

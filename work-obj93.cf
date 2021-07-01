@@ -1,0 +1,13 @@
+v 4
+file . "Pc.vhd" "3c71304d4effc720620f3dcd8239101f45616726" "20210602161526.168":
+  entity program_counter at 1( 0) + 0 on 43;
+  architecture pc of program_counter at 21( 362) + 0 on 44;
+file . "Decoder.vhd" "baeb69505f27a65d63801ad55501c9c0b1a77895" "20210602161526.076":
+  entity entity_decoder at 1( 0) + 0 on 39;
+  architecture arch_decoder of entity_decoder at 20( 363) + 0 on 40;
+file . "Common.vhd" "be0dfc2559a4125d3798e2b45a2ba03c49d0c20f" "20210602161526.046":
+  package common at 1( 0) + 0 on 37;
+  package body common at 77( 2703) + 0 on 38;
+file . "Alu.vhd" "4a92c0b2ef78597daed709369972303b07bd4d08" "20210602171901.265":
+  entity alu at 1( 0) + 0 on 47;
+  architecture arch_alu of alu at 25( 470) + 0 on 48;

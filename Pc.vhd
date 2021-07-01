@@ -2,49 +2,45 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity PROGRAM_COUNTER is
+entity pc_entity is
 
 	port
 	(
 		-- Input ports
-		I_clock		 		: in	STD_LOGIC;
-		I_jump				: in 	STD_LOGIC;
-		I_new_address		: in 	STD_LOGIC_VECTOR (7 downto 0);
+		I_enable			: in  STD_LOGIC;
+		I_clock		 		: in  STD_LOGIC;
+		I_jump				: in  STD_LOGIC;
+		I_newAddress		: in  STD_LOGIC_VECTOR (7 downto 0);
 		
 		-- Output ports
-		O_program_counter	: out STD_LOGIC_VECTOR (7 downto 0)
+		O_programCounter	: out STD_LOGIC_VECTOR (7 downto 0) := X"00"
 	);
 	
-end PROGRAM_COUNTER;
+end pc_entity;
 
 
-architecture PC of PROGRAM_COUNTER is
-
-	-- Declarations
-	signal S_internal_program_counter: STD_LOGIC_VECTOR (7 downto 0)  :=	X"00";
+architecture pc_arch of pc_entity is
 
 begin
 
 	process (I_clock)
+	
+	variable V_programCounter	: STD_LOGIC_VECTOR (7 downto 0) := X"00";
+
 	begin
 	
-		if (rising_edge(I_clock)) then
-		
+		if (rising_edge(I_clock) and I_enable = '1') then
+				
 			if I_jump = '1' then
-				S_internal_program_counter <= I_new_address;
+				V_programCounter := I_newAddress;
 			else
-				S_internal_program_counter <= std_logic_vector(unsigned(S_internal_program_counter) + 1);
-			end if;
+				V_programCounter := std_logic_vector(unsigned(V_programCounter) + 1);
+			end if;	
 			
-			O_program_counter <= S_internal_program_counter;
+			O_programCounter <= V_programCounter;
 			
 		end if;
 		
 	end process;
 
-end pc;
-
-
-
-
-
+end pc_arch;
