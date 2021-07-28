@@ -20,7 +20,7 @@ entity alu_entity is
 		O_data				: out STD_LOGIC_VECTOR (7 downto 0);
 		O_flags				: out STD_LOGIC_VECTOR (2 downto 0);
 		O_regWriteSelect 	: out STD_LOGIC_VECTOR (7 downto 0);
-		O_regWriteEnable	: out STD_LOGIC;
+		O_regWriteEnable	: out STD_LOGIC := '0';
 		O_shouldJump		: out STD_LOGIC := '0'
 	);
 	
@@ -37,7 +37,7 @@ begin
 	
 	begin
 		if rising_edge(I_clock) and I_enable = '1' then
-		
+				
 			O_regWriteEnable <= '0';
 			O_shouldJump <= '0';
 		
@@ -46,6 +46,7 @@ begin
 				when OPCODE_CLEAR_ACCU =>					
 					V_accu := (others => '0');					
 
+					
 				when OPCODE_CLEAR_NEGATIVE_FLAG =>					
 					V_flags(FLAG_BIT_NEGATIVE) := '0';					
 
@@ -64,7 +65,8 @@ begin
 				when OPCODE_SET_CARRY_FLAG =>				
 					V_flags(FLAG_BIT_CARRY) := '1';	
 			
-				when OPCODE_ADDI | OPCODE_ADDD | OPCODE_ADDR =>
+			
+				when OPCODE_ADDI | OPCODE_ADDD =>
 				
 					-- Perform addition; I_data has to be sign-extended for that					
 					if I_opcode = OPCODE_ADDI then
@@ -91,8 +93,8 @@ begin
 					
 					-- Set negative flag
 					V_flags(FLAG_BIT_NEGATIVE) := V_accu(8);
-										
-				when OPCODE_SUBI | OPCODE_SUBD | OPCODE_SUBR =>
+					
+				when OPCODE_SUBI | OPCODE_SUBD =>
 					
 					if I_opcode = OPCODE_SUBI then
 						V_accu := std_logic_vector(signed(V_accu) - signed(I_dataImm(7) & I_dataImm));
@@ -118,7 +120,8 @@ begin
 					
 					-- Set negative flag
 					V_flags(FLAG_BIT_NEGATIVE) := V_accu(8);
-								
+					
+					
 				when OPCODE_MOVI | OPCODE_MOVD =>
 				
 					O_regWriteEnable <= '1';
@@ -128,47 +131,36 @@ begin
 						O_regWriteSelect <= I_dataReg;
 					end if;					
 					
-				when OPCODE_JMPI | OPCODE_JMPD | OPCODE_JMPR =>
+					
+				when OPCODE_JMPI | OPCODE_JMPD =>
 				
 					O_shouldJump <= '1';
 					if I_opcode = OPCODE_JMPI then
 						V_accu := '0' & I_dataImm;
-					elsif I_opcode = OPCODE_JMPD then
+					else -- I_opcode = OPCODE_JMPD
 						V_accu := '0' & I_dataReg;
-					else -- I_opcode = OPCODE_JMPR
-						-- ToDo
 					end if;
 					
-				when OPCODE_JMPNI | OPCODE_JMPND | OPCODE_JMPNR =>
+				when OPCODE_JMPNI | OPCODE_JMPND =>
 					
-					if I_opcode = OPCODE_JMPNI then
-						if V_flags(FLAG_BIT_NEGATIVE) = '1' then
+					if V_flags(FLAG_BIT_NEGATIVE) = '1' then
+						O_shouldJump <= '1';
+						if I_opcode = OPCODE_JMPNI then							
 							V_accu := '0' & I_dataImm;
-							O_shouldJump <= '1';
-						end if;	
-					elsif I_opcode = OPCODE_JMPND then
-						if V_flags(FLAG_BIT_NEGATIVE) = '1' then
+						else -- I_opcode = OPCODE_JMPND
 							V_accu := '0' & I_dataReg;
-							O_shouldJump <= '1';
-						end if;						
-					else -- I_opcode = OPCODE_JMPNR
-						-- ToDo
+						end if;	
 					end if;	
 				
-				when OPCODE_JMPZI | OPCODE_JMPZD | OPCODE_JMPZR =>
+				when OPCODE_JMPZI | OPCODE_JMPZD =>
 					
-					if I_opcode = OPCODE_JMPZI then
-						if V_flags(FLAG_BIT_ZERO) = '1' then
+					if V_flags(FLAG_BIT_ZERO) = '1' then
+						O_shouldJump <= '1';
+						if I_opcode = OPCODE_JMPZI then
 							V_accu := '0' & I_dataImm;
-							O_shouldJump <= '1';
-						end if;	
-					elsif I_opcode = OPCODE_JMPZD then
-						if V_flags(FLAG_BIT_ZERO) = '1' then
+						else -- I_opcode = OPCODE_JMPZD
 							V_accu := '0' & I_dataReg;
-							O_shouldJump <= '1';
-						end if;						
-					else -- I_opcode = OPCODE_JMPZR
-						-- ToDo
+						end if;
 					end if;				
 
 				when others =>	

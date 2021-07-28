@@ -39,15 +39,19 @@ architecture rom_arch of rom_entity is
 		OPCODE_ADDI & X"04", -- PC = 5
 		OPCODE_MOVI & X"03",
 		OPCODE_CLEAR_ACCU & OPCODE_NOP,
-		OPCODE_CLEAR_ACCU & OPCODE_NOP,
 		-- Contents: R3:4
+		
+		OPCODE_NOP & OPCODE_NOP,
+		OPCODE_NOP & OPCODE_NOP,
+		OPCODE_NOP & OPCODE_NOP,
+		OPCODE_NOP & OPCODE_NOP,
+		OPCODE_NOP & OPCODE_NOP,
 		
 		-- Load 15 and subtract content of R3 (4), store result in R2 (11)
 		-- Test: SUBD (ADDD)
 		OPCODE_ADDI & X"0F", -- PC = 9
 		OPCODE_SUBD & X"03",
 		OPCODE_MOVI & X"02",
-		OPCODE_CLEAR_ACCU & OPCODE_NOP,
 		OPCODE_CLEAR_ACCU & OPCODE_NOP,
 		-- Contents: R2:11 R3:4
 		

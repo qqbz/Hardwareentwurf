@@ -13,10 +13,10 @@ entity memory_entity is
 		-- Input ports
 		I_clock				: in STD_LOGIC;
 		I_enable			: in STD_LOGIC;
-		I_writeEnable		: in STD_LOGIC;
 		I_regReadSelect		: in STD_LOGIC_VECTOR (7 downto 0);
 		I_regWriteSelect	: in STD_LOGIC_VECTOR (7 downto 0);
 		I_regWriteData		: in STD_LOGIC_VECTOR (7 downto 0);
+		I_writeEnable		: in STD_LOGIC;
 
 		-- Output ports
 		O_regReadData		: out STD_LOGIC_VECTOR (7 downto 0)
@@ -26,8 +26,8 @@ end memory_entity;
 architecture memory_arch of memory_entity is
 
 	-- Declarations
-	type T_regs is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
-	signal S_regs: T_regs := (others => X"00");
+	type T_mem is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
+	signal S_mem: T_mem := (others => X"00");
 
 begin
 
@@ -37,11 +37,11 @@ begin
 		
 		if rising_edge(I_clock) and I_enable = '1' then
 				
-			O_regReadData <= S_regs(to_integer(unsigned(I_regReadSelect)));
+			O_regReadData <= S_mem(to_integer(unsigned(I_regReadSelect)));
 			
 			if I_writeEnable = '1' then
 				
-				S_regs(to_integer(unsigned(I_regWriteSelect))) <= I_regWriteData;
+				S_mem(to_integer(unsigned(I_regWriteSelect))) <= I_regWriteData;
 				
 			end if;
 			

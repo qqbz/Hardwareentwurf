@@ -128,6 +128,26 @@ ARCHITECTURE Memory_tb_arch OF Memory_tb IS
 			I_writeEnable <= '1';
 			wait for I_clk_period;
 
+
+			-- test for writing.
+			-- r1 = 0x71
+			I_regSelect <= X"01";
+			I_regData <= X"71";
+			I_writeEnable <= '1';
+			wait for I_clk_period;
+
+			-- r2 = 0x72
+			I_regSelect <= X"02";
+			I_regData <= X"72";
+			I_writeEnable <= '1';
+			wait for I_clk_period;
+
+			-- r3 = 0x73
+			I_regSelect <= X"03";
+			I_regData <= X"73";
+			I_writeEnable <= '1';
+			wait for I_clk_period;
+
 			wait;
 		end process;
 END;
