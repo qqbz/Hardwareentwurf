@@ -73,18 +73,6 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name EDA_TEST_BENCH_NAME Test_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Test_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Test_tb -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/VHDL_microprocessor_tb.vhd -section_id vhdl_microprocessor_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Memory_tb.vhd -section_id Memory_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Pc_tb.vhd -section_id Pc_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/vhdl1_tb.vhd -section_id vhdl1_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Common.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE ControlUnit.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Alu.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Memory.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Decoder.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Test1_tb.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Rom.vhd -section_id Test_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE Pc.vhd -section_id Test_tb
 set_global_assignment -name VHDL_FILE simulation/modelsim/Test1_tb.vhd
 set_global_assignment -name VHDL_FILE simulation/modelsim/Pc_tb.vhd
 set_global_assignment -name VHDL_FILE simulation/modelsim/Memory_tb.vhd
@@ -98,4 +86,17 @@ set_global_assignment -name VHDL_FILE Alu.vhd
 set_global_assignment -name SDC_FILE VHDL_microprocessor.sdc
 set_global_assignment -name VHDL_FILE ControlUnit.vhd
 set_global_assignment -name VHDL_FILE Rom.vhd
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "4000 ns" -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/VHDL_microprocessor_tb.vhd -section_id vhdl_microprocessor_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Memory_tb.vhd -section_id Memory_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Pc_tb.vhd -section_id Pc_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/vhdl1_tb.vhd -section_id vhdl1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Common.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ControlUnit.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Alu.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Memory.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Decoder.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/Test1_tb.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Rom.vhd -section_id Test_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Pc.vhd -section_id Test_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

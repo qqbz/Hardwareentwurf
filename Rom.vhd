@@ -26,7 +26,7 @@ architecture rom_arch of rom_entity is
 
 	-- Build a 2-D array type for the ROM
 	type T_rom is array(0 to 255) of STD_LOGIC_VECTOR(15 downto 0);
-	signal rom : T_rom := 
+	signal S_rom : T_rom := 
 	(
 		OPCODE_NOP & OPCODE_NOP,
 		OPCODE_NOP & OPCODE_NOP,
@@ -40,12 +40,6 @@ architecture rom_arch of rom_entity is
 		OPCODE_MOVI & X"03",
 		OPCODE_CLEAR_ACCU & OPCODE_NOP,
 		-- Contents: R3:4
-		
-		OPCODE_NOP & OPCODE_NOP,
-		OPCODE_NOP & OPCODE_NOP,
-		OPCODE_NOP & OPCODE_NOP,
-		OPCODE_NOP & OPCODE_NOP,
-		OPCODE_NOP & OPCODE_NOP,
 		
 		-- Load 15 and subtract content of R3 (4), store result in R2 (11)
 		-- Test: SUBD (ADDD)
@@ -157,7 +151,7 @@ begin
 	
 		if(rising_edge(I_clock)) then
 		
-			O_instruction <= rom(to_integer(unsigned(I_address)));
+			O_instruction <= S_rom(to_integer(unsigned(I_address)));
 			
 		end if;
 		

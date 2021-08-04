@@ -21,7 +21,7 @@ architecture decoder_arch of decoder_entity is
 
 begin
 
-	process (I_clock)
+	process (I_clock, I_enable)
 	begin
 		
 		if rising_edge(I_clock) and I_enable = '1' then

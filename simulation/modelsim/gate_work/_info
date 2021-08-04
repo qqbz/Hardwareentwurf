@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim
 Ealu_entity
-Z1 w1625127242
+Z1 w1626187444
 Z2 DPx4 work 6 common 0 22 @4:AZiaQfAo`=?mNSL@hn0
 Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -19,30 +19,30 @@ Z6 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/
 Z7 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
 l0
 L8
-V9:e2]Cz[9OV=lTb]BAY^`1
-!s100 Uc^CzK@jYkTSAD1BIQFPK0
+Vbd79<[dJg7L^j<V[?eE1U0
+!s100 Qz8IUTkK<4P9mC13cO55G0
 Z8 OV;C;10.5b;63
-32
-Z9 !s110 1625128242
+31
+Z9 !s110 1627624732
 !i10b 1
-Z10 !s108 1625128242.000000
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd|
+Z10 !s108 1627624732.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd|
 Z12 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd|
 !i113 1
-Z13 o-work work
+Z13 o-93 -work work
 Z14 tExplicit 1 CvgOpt 0
 Aalu_arch
 R2
 R3
 R4
 R5
-DEx4 work 10 alu_entity 0 22 9:e2]Cz[9OV=lTb]BAY^`1
+DEx4 work 10 alu_entity 0 22 bd79<[dJg7L^j<V[?eE1U0
 l31
 L29
-V1`?IU>GIo9ULzblS3ZH_;1
-!s100 3zRGcQoUckjOoCEe9Y:?J0
+VU:cje=8TH1fDF;CO6Ba]M1
+!s100 z<fkSYgWTWk=YN:gGTGdo2
 R8
-32
+31
 R9
 !i10b 1
 R10
@@ -64,13 +64,13 @@ V@4:AZiaQfAo`=?mNSL@hn0
 !s100 <HJ0=KMDa87^]el<PnnK:0
 R8
 31
-Z18 !s110 1625128241
+R9
 !i10b 1
-Z19 !s108 1625128241.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd|
-Z21 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd|
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd|
+Z19 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd|
 !i113 1
-Z22 o-93 -work work
+R13
 R14
 Bbody
 R2
@@ -82,34 +82,34 @@ VM;=f1_CFZ@SK6ZkG?mogh3
 !s100 AE`WZ;kC`ekU4WBcoQo4h3
 R8
 31
-R18
+R9
 !i10b 1
+R10
+R18
 R19
-R20
-R21
 !i113 1
-R22
+R13
 R14
 Econtrolunit_entity
-Z23 w1625128227
+Z20 w1627478483
 R4
 R5
 R0
-Z24 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
-Z25 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+Z21 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+Z22 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
 l0
 L11
 Va;K>jhO6Wf]d[XSZfgNVn1
 !s100 HjjT0V9821:?>P>OYj8T`0
 R8
 31
-Z26 !s110 1625128244
+R9
 !i10b 1
-Z27 !s108 1625128244.000000
-Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd|
-Z29 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd|
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd|
+Z24 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd|
 !i113 1
-R22
+R13
 R14
 Acontrolunit_arch
 R4
@@ -117,76 +117,76 @@ R5
 DEx4 work 18 controlunit_entity 0 22 a;K>jhO6Wf]d[XSZfgNVn1
 l33
 L25
-VY>zh3]m9FTcAbdfoEHfIg0
-!s100 8FWGG5UG^We0i^W0f^o4b2
+V_nO:ZH16LEj:LCWEjENH53
+!s100 R65Tb^<QFY@X0F64ClD8B0
 R8
 31
-R26
+R9
 !i10b 1
-R27
-R28
-R29
+R10
+R23
+R24
 !i113 1
-R22
+R13
 R14
 Edecoder_entity
-Z30 w1625126902
+Z25 w1625126902
 R4
 R5
 R0
-Z31 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-Z32 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
+Z26 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
+Z27 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
 l0
 L3
-Vn<kog2Sg1DzjcQEYVNgM90
+VJ[K_eQIDQn:00CZ]F<>_o1
 !s100 Nf29<BEQ^K9lJf^@]=62C1
 R8
-32
-Z33 !s110 1625128245
+31
+R9
 !i10b 1
-Z34 !s108 1625128245.000000
-Z35 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd|
-Z36 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd|
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd|
+Z29 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd|
 !i113 1
 R13
 R14
 Adecoder_arch
 R4
 R5
-DEx4 work 14 decoder_entity 0 22 n<kog2Sg1DzjcQEYVNgM90
+DEx4 work 14 decoder_entity 0 22 J[K_eQIDQn:00CZ]F<>_o1
 l22
 L20
-V;>SQohH^CP<n1ih2Y7jcT3
+VhdzSR3EehlEVfNE^hjKh]1
 !s100 ^G>8;1h@]E]imCaEQlfU=1
 R8
-32
-R33
+31
+R9
 !i10b 1
-R34
-R35
-R36
+R10
+R28
+R29
 !i113 1
 R13
 R14
 Ememory_entity
-Z37 w1625127468
+Z30 w1626184642
 R5
 R4
 R3
 R0
-Z38 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-Z39 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
+Z31 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
+Z32 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
 l0
 L10
-V@XEGJkQ9VK<55fE?ZAnS=1
-!s100 :oZPgh1O466:`jFoME00@1
+V<^PfK?3f5OoQI=T:cV0gX1
+!s100 K5AY@36GBkXbB^<GJL:Fk0
 R8
-32
-Z40 !s110 1625128247
+31
+R9
 !i10b 1
-Z41 !s108 1625128247.000000
-Z42 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd|
-Z43 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd|
+R10
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd|
+Z34 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd|
 !i113 1
 R13
 R14
@@ -194,40 +194,40 @@ Amemory_arch
 R5
 R4
 R3
-DEx4 work 13 memory_entity 0 22 @XEGJkQ9VK<55fE?ZAnS=1
+DEx4 work 13 memory_entity 0 22 <^PfK?3f5OoQI=T:cV0gX1
 l32
 L26
-VAh:20nDPPVQ6=jYO[_U9D0
-!s100 ?N?YAWG[<Hc7^YSP1ifee3
+V8hOUe_MJAk4DQVLbo5Ce93
+!s100 0O>hMEEMQhRSg6eI3o3>d0
 R8
-32
-R40
+31
+R9
 !i10b 1
-R41
-R42
-R43
+R10
+R33
+R34
 !i113 1
 R13
 R14
 Epc_entity
-Z44 w1624696309
+Z35 w1624696309
 R3
 R4
 R5
 R0
-Z45 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
-Z46 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
+Z36 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
+Z37 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
 l0
 L5
-VnJ3CFK]JWF?M]z8ATL_R@3
+VAmREdGENfA^aIgzdF4]]e3
 !s100 4F[?^RzM;<NUES_XIJYQ^3
 R8
-32
-Z47 !s110 1625128248
+31
+Z38 !s110 1627624733
 !i10b 1
-Z48 !s108 1625128248.000000
-Z49 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd|
-Z50 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd|
+Z39 !s108 1627624733.000000
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd|
+Z41 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd|
 !i113 1
 R13
 R14
@@ -235,41 +235,41 @@ Apc_arch
 R3
 R4
 R5
-DEx4 work 9 pc_entity 0 22 nJ3CFK]JWF?M]z8ATL_R@3
+DEx4 work 9 pc_entity 0 22 AmREdGENfA^aIgzdF4]]e3
 l24
 L22
-Vmid:4GRSF^VGNkIlZ2Nol2
+V@1OUS4]^=TRJe1=892f^73
 !s100 @KXjCAcS[oT:<oW[mI>Ro0
 R8
-32
-R47
+31
+R38
 !i10b 1
-R48
-R49
-R50
+R39
+R40
+R41
 !i113 1
 R13
 R14
 Erom_entity
-Z51 w1625126745
+Z42 w1627465443
 R2
 R3
 R4
 R5
 R0
-Z52 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
-Z53 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
+Z43 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
+Z44 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
 l0
 L11
-VLTl_]fWD]I`QYlVIg1[ne0
+VWmKlM4??6l^;<8an^0e<Q3
 !s100 UhaS]>8048V5?W@9YRW^o0
 R8
-32
-Z54 !s110 1625128249
+31
+R9
 !i10b 1
-Z55 !s108 1625128249.000000
-Z56 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd|
-Z57 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd|
+R10
+Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd|
+Z46 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd|
 !i113 1
 R13
 R14
@@ -278,116 +278,116 @@ R2
 R3
 R4
 R5
-DEx4 work 10 rom_entity 0 22 LTl_]fWD]I`QYlVIg1[ne0
-l149
+DEx4 work 10 rom_entity 0 22 WmKlM4??6l^;<8an^0e<Q3
+l153
 L25
-VV@K@AUNW724hdod<Gh0:]1
-!s100 ]UOV@aKDgB>gCTi]Y@meD1
+VdC_b72Dfi08Fh@hfV4Bc^1
+!s100 Y0ibCAd^:`2o2ZTAl_H`Z3
 R8
-32
-R54
+31
+R9
 !i10b 1
-R55
-R56
-R57
+R10
+R45
+R46
 !i113 1
 R13
 R14
 Etest_tb
-Z58 w1625127964
+Z47 w1627482017
 R2
-Z59 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z60 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z61 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z48 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z49 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z50 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R5
 R4
 R3
 R0
-Z62 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
-Z63 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
+Z51 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
+Z52 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
 l0
 L12
-VRQYL1:MeV:^[:VTj]?B<U0
+V>[^cL<jiGmA0Q10GCV3[E3
 !s100 [XQEFboCJA1CbYZ=2P`103
 R8
-32
-Z64 !s110 1625128251
+31
+R9
 !i10b 1
-Z65 !s108 1625128251.000000
-Z66 !s90 -reportprogress|300|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd|
-Z67 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd|
+R10
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd|
+Z54 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd|
 !i113 1
 R13
 R14
 Abehavior
 R2
-R59
-R60
-R61
+R48
+R49
+R50
 R5
 R4
 R3
-Z68 DEx4 work 7 test_tb 0 22 RQYL1:MeV:^[:VTj]?B<U0
-l125
+DEx4 work 7 test_tb 0 22 >[^cL<jiGmA0Q10GCV3[E3
+l94
 L15
-VkQP;?oY1fYoZ<C=L:hWF31
-!s100 7:<EnE_98>cG:lb`2P`[72
+VeLU9P4CECHRK8aYMH37E=1
+!s100 jcUZk7`kSoMTYWPDI:dC01
 R8
-32
-R64
+31
+R9
 !i10b 1
-R65
-R66
-R67
+R10
+R53
+R54
 !i113 1
 R13
 R14
 Evhdl_microprocessor
-Z69 w1623332582
-Z70 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z71 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
-Z72 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z73 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
+Z55 w1623332582
+Z56 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z57 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 41KVoNENnj;RUmMIITVQg1
+Z58 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z59 DPx8 cyclonev 19 cyclonev_components 0 22 MmMkVfW5JWkR?lm<VcfRO1
 R4
 R5
-Z74 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
+Z60 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3L]34bNSPL@[RD2AeKH]S3
 R0
-Z75 8VHDL_microprocessor.vho
-Z76 FVHDL_microprocessor.vho
+Z61 8C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/VHDL_microprocessor.vho
+Z62 FC:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/VHDL_microprocessor.vho
 l0
 L37
 VlFWeY_66nRMU9mP:KWhak2
 !s100 gf@S3d[Badh8YeIC`QzW_2
 R8
 31
-Z77 !s110 1625125700
+Z63 !s110 1627625174
 !i10b 1
-Z78 !s108 1625125700.000000
-Z79 !s90 -reportprogress|300|-93|-work|work|VHDL_microprocessor.vho|
-Z80 !s107 VHDL_microprocessor.vho|
+Z64 !s108 1627625174.000000
+Z65 !s90 -reportprogress|300|-93|-work|work|C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/VHDL_microprocessor.vho|
+Z66 !s107 C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/VHDL_microprocessor.vho|
 !i113 1
-R22
+R13
 R14
 Astructure
-R70
-R71
-R72
-R73
+R56
+R57
+R58
+R59
 R4
 R5
-R74
-DEx4 work 19 vhdl_microprocessor 0 22 lFWeY_66nRMU9mP:KWhak2
+R60
+Z67 DEx4 work 19 vhdl_microprocessor 0 22 lFWeY_66nRMU9mP:KWhak2
 l61
 L47
-V3Og[0ME=S7aID?]QcaMeg3
-!s100 dKoUDkUU8`]jjV4=jJ6T>0
+Z68 V3Og[0ME=S7aID?]QcaMeg3
+Z69 !s100 dKoUDkUU8`]jjV4=jJ6T>0
 R8
 31
-R77
+R63
 !i10b 1
-R78
-R79
-R80
+R64
+R65
+R66
 !i113 1
-R22
+R13
 R14

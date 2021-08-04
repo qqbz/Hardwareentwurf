@@ -30,7 +30,7 @@ architecture alu_arch of alu_entity is
 
 begin
 
-	process (I_clock)
+	process (I_clock, I_enable)
 	
 	variable V_accu				: STD_LOGIC_VECTOR (8 downto 0) := (others => '0');
 	variable V_flags			: STD_LOGIC_VECTOR (2 downto 0) := (others => '0');

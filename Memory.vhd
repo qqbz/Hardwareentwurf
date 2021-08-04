@@ -32,7 +32,7 @@ architecture memory_arch of memory_entity is
 begin
 
 	-- Process Statement
-	process(I_clock)
+	process(I_clock, I_enable)
 	begin
 		
 		if rising_edge(I_clock) and I_enable = '1' then

@@ -2,7 +2,256 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "O_pipeline_stage[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pipeline_stage[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pipeline_stage[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_pc_programCounter[7]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[7]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[8]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[9]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[10]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[11]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[12]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[13]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[14]",
+					"strict" : false
+				},
+				{
+					"name" : "O_rom_instruction[15]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_opcode[7]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_dataImmediate[7]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_decoder_regAddress[7]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[0]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "O_memory_regReadData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "I_processor_clock",
+					"strict" : false
+				},
+				{
+					"name" : "I_processor_reset",
+					"strict" : false
+				},
+				{
+					"name" : "I_processor_enable",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

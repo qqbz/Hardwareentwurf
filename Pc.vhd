@@ -23,7 +23,7 @@ architecture pc_arch of pc_entity is
 
 begin
 
-	process (I_clock)
+	process (I_clock, I_enable)
 	
 	variable V_programCounter	: STD_LOGIC_VECTOR (7 downto 0) := X"00";
 

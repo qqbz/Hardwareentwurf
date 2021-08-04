@@ -21,4 +21,4 @@ vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=VHDL_microp
 add wave *
 view structure
 view signals
-run -all
+run 4000 ns

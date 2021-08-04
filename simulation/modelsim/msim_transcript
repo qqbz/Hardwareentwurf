@@ -1,35 +1,53 @@
 # Reading C:/intelFPGA_lite/16.1/modelsim_ase/tcl/vsim/pref.tcl
-# do VHDL_microprocessor_run_msim_gate_vhdl.do
-# if {[file exists gate_work]} {
-# 	vdel -lib gate_work -all
+# do VHDL_microprocessor_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
 # }
-# vlib gate_work
-# vmap work gate_work
+# vlib rtl_work
+# vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
-# vmap work gate_work 
+# vmap work rtl_work 
 # Copying C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {VHDL_microprocessor.vho}
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:20 on Jul 01,2021
-# vcom -reportprogress 300 -93 -work work VHDL_microprocessor.vho 
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package altera_lnsim_components
-# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives
-# -- Loading package cyclonev_atom_pack
-# -- Loading package cyclonev_components
-# -- Compiling entity VHDL_microprocessor
-# -- Compiling architecture structure of VHDL_microprocessor
-# End time: 09:48:20 on Jul 01,2021, Elapsed time: 0:00:00
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pc_entity
+# -- Compiling architecture pc_arch of pc_entity
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_entity
+# -- Compiling architecture memory_arch of memory_entity
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_entity
+# -- Compiling architecture decoder_arch of decoder_entity
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:20 on Jul 01,2021
+# Start time: 10:44:37 on Jul 31,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -37,22 +55,35 @@
 # -- Compiling package common
 # -- Compiling package body common
 # -- Loading package common
-# End time: 09:48:20 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:20 on Jul 01,2021
+# Start time: 10:44:37 on Jul 31,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlUnit_entity
 # -- Compiling architecture controlUnit_arch of controlUnit_entity
-# End time: 09:48:20 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/VHDL_microprocessor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/VHDL_microprocessor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package common
+# -- Compiling entity VHDL_microprocessor
+# -- Compiling architecture VHDL_microprocessor_arch of VHDL_microprocessor
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:20 on Jul 01,2021
+# Start time: 10:44:37 on Jul 31,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -60,127 +91,13 @@
 # -- Loading package NUMERIC_STD
 # -- Loading package common
 # -- Compiling entity alu_entity
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd(23): near ",": (vcom-1576) expecting ';' or ')'.
-# End time: 09:48:20 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./VHDL_microprocessor_run_msim_gate_vhdl.do line 12
-# C:/intelFPGA_lite/16.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd}"
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Alu_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:42 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Alu_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity Alu_tb
-# -- Compiling architecture Alu_tb_arch of Alu_tb
-# End time: 09:48:42 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:48:46 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity Decoder_tb
-# -- Compiling architecture Decoder_tb_arch of Decoder_tb
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(42): (vcom-1136) Unknown identifier "I_opcode".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(43): (vcom-1136) Unknown identifier "I_data".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(45): (vcom-1136) Unknown identifier "O_flags".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(46): (vcom-1136) Unknown identifier "O_shouldJump".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(42): (vcom-1484) Unknown formal identifier "I_opcode".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(43): (vcom-1484) Unknown formal identifier "I_data".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(44): (vcom-1484) Unknown formal identifier "O_data".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(45): (vcom-1484) Unknown formal identifier "O_flags".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(46): (vcom-1484) Unknown formal identifier "O_shouldJump".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(61): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(61): Type error resolving infix expression "*" as type std.STANDARD.TIME.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(65): (vcom-1136) Unknown identifier "OPCODE_ADDI".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(65): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(66): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(69): (vcom-1136) Unknown identifier "OPCODE_MOVI".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(69): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(70): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(73): (vcom-1136) Unknown identifier "OPCODE_CLEAR_ACCU".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(73): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(74): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(77): (vcom-1136) Unknown identifier "OPCODE_ADDI".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(77): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(78): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(81): (vcom-1136) Unknown identifier "OPCODE_SUBD".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(81): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(82): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(85): (vcom-1136) Unknown identifier "OPCODE_MOVI".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(85): Type error resolving infix expression "&" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(86): (vcom-1136) Unknown identifier "I_clk_period".
-# ** Error: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Decoder_tb.vhd(90): VHDL Compiler exiting
-# End time: 09:48:46 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 30, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:49:09 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity alu_entity
 # -- Compiling architecture alu_arch of alu_entity
-# End time: 09:49:09 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:49:14 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package common
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 09:49:14 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:49:16 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory_entity
-# -- Compiling architecture memory_arch of memory_entity
-# End time: 09:49:16 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:49:20 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity pc_entity
-# -- Compiling architecture pc_arch of pc_entity
-# End time: 09:49:20 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:49:22 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -188,69 +105,12 @@ vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/Hardwar
 # -- Loading package common
 # -- Compiling entity rom_entity
 # -- Compiling architecture rom_arch of rom_entity
-# End time: 09:49:22 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.vhdl_microprocessor
-# vsim work.vhdl_microprocessor 
-# Start time: 09:49:32 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading altera_lnsim.altera_lnsim_components
-# Loading ieee.vital_timing(body)
-# Loading ieee.vital_primitives(body)
-# Loading cyclonev.cyclonev_atom_pack(body)
-# Loading cyclonev.cyclonev_components
-# Loading work.vhdl_microprocessor(structure)
-# Loading cyclonev.cyclonev_io_ibuf(arch)
-# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
-# Break key hit
-vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
+# 
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:05 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 09:50:05 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.test_tb
-# End time: 09:50:10 on Jul 01,2021, Elapsed time: 0:00:38
-# Errors: 0, Warnings: 0
-# vsim work.test_tb 
-# Start time: 09:50:10 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
-# Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
-# Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(174): No default binding for component instance 'DUT_decoder'.
-#    The following component port is not on the entity:
-#           O_regWrite
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_decoder File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Loading work.alu_entity(alu_arch)
-# Loading work.memory_entity(memory_arch)
-# Error loading design
-# End time: 09:50:10 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:36 on Jul 01,2021
+# Start time: 10:44:37 on Jul 31,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -258,12 +118,23 @@ vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_
 # -- Compiling package common
 # -- Compiling package body common
 # -- Loading package common
-# End time: 09:50:36 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:42 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit_entity
+# -- Compiling architecture controlUnit_arch of controlUnit_entity
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -271,59 +142,51 @@ vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hard
 # -- Loading package common
 # -- Compiling entity alu_entity
 # -- Compiling architecture alu_arch of alu_entity
-# End time: 09:50:42 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:44 on Jul 01,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity controlUnit_entity
-# -- Compiling architecture controlUnit_arch of controlUnit_entity
-# End time: 09:50:44 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:45 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package common
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 09:50:45 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:46 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory_entity
 # -- Compiling architecture memory_arch of memory_entity
-# End time: 09:50:47 on Jul 01,2021, Elapsed time: 0:00:01
+# End time: 10:44:37 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:49 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
+# Start time: 10:44:37 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder_entity
+# -- Compiling architecture decoder_arch of decoder_entity
+# End time: 10:44:38 on Jul 31,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:44:38 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity pc_entity
-# -- Compiling architecture pc_arch of pc_entity
-# End time: 09:50:49 on Jul 01,2021, Elapsed time: 0:00:00
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package common
+# -- Compiling entity Test_tb
+# -- Compiling architecture behavior of Test_tb
+# End time: 10:44:38 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:50:50 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
+# Start time: 10:44:38 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -331,240 +194,80 @@ vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hard
 # -- Loading package common
 # -- Compiling entity rom_entity
 # -- Compiling architecture rom_arch of rom_entity
-# End time: 09:50:50 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:38 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.test_tb
-# vsim work.test_tb 
-# Start time: 09:50:53 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
-# Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
-# Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(174): No default binding for component instance 'DUT_decoder'.
-#    The following component port is not on the entity:
-#           O_regWrite
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_decoder File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Loading work.alu_entity(alu_arch)
-# Loading work.memory_entity(memory_arch)
-# Error loading design
-# End time: 09:50:53 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
+# vcom -93 -work work {C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:52:44 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 09:52:44 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.test_tb
-# vsim work.test_tb 
-# Start time: 09:52:47 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
-# Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
-# Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# Loading work.alu_entity(alu_arch)
-# Loading work.memory_entity(memory_arch)
-add wave -position end  sim:/test_tb/S_reset
-add wave -position end  sim:/test_tb/S_enable_controlUnit
-add wave -position end  sim:/test_tb/S_clock
-add wave -position end  sim:/test_tb/S_enable_others
-add wave -position end  sim:/test_tb/S_enable_memory
-add wave -position end  sim:/test_tb/S_pcOut_programCounter_romIn_address
-add wave -position end  sim:/test_tb/S_romOut_instruction_decoderIn_instruction
-add wave -position end  sim:/test_tb/S_decoderOut_opcode_aluIn_opcode
-add wave -position end  sim:/test_tb/S_decoderOut_immediate_aluIn_dataImm
-add wave -position end  sim:/test_tb/S_decoderOut_reg_memoryIn_regReadSelect
-add wave -position end  sim:/test_tb/S_memoryOut_regData_aluIn_dataReg
-add wave -position end  sim:/test_tb/S_aluOut_data_memoryIn_regData_pcIn_newAddress
-add wave -position end  sim:/test_tb/S_aluOut_flags
-add wave -position end  sim:/test_tb/S_aluOut_regSelect_memoryIn_regWriteSelect
-add wave -position end  sim:/test_tb/S_aluOut_regWrite_memoryIn_writeEnable
-add wave -position end  sim:/test_tb/S_aluOut_shouldJump_pcIn_jump
-add wave -position end  sim:/test_tb/S_memory_writeEnable
-run
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:07:54 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 10:07:54 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:08:34 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 10:08:34 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:10:18 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity alu_entity
-# -- Compiling architecture alu_arch of alu_entity
-# End time: 10:10:18 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:11:41 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity alu_entity
-# -- Compiling architecture alu_arch of alu_entity
-# End time: 10:11:41 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.decoder_entity(decoder_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(173): No default binding for component instance 'DUT_decoder'.
-#    The following component ports are not on the entity:
-#           O_reg
-#           O_immediate
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_decoder File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Loading work.alu_entity(alu_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(188): No default binding for component instance 'DUT_alu'.
-#    The following component ports are not on the entity:
-#           O_regWrite
-#           O_regSelect
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_alu File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-vsim work.test_tb
-# vsim work.test_tb 
-# Start time: 09:52:47 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
-# Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
-# Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(173): No default binding for component instance 'DUT_decoder'.
-#    The following component ports are not on the entity:
-#           O_reg
-#           O_immediate
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_decoder File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Loading work.alu_entity(alu_arch)
-# ** Error: (vsim-3732) C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd(188): No default binding for component instance 'DUT_alu'.
-#    The following component ports are not on the entity:
-#           O_regWrite
-#           O_regSelect
-#    Time: 0 ps  Iteration: 0  Instance: /test_tb/DUT_alu File: C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Loading work.memory_entity(memory_arch)
-# Error loading design
-# End time: 10:11:52 on Jul 01,2021, Elapsed time: 0:19:05
-# Errors: 4, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:39 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity alu_entity
-# -- Compiling architecture alu_arch of alu_entity
-# End time: 10:14:39 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:41 on Jul 01,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity controlUnit_entity
-# -- Compiling architecture controlUnit_arch of controlUnit_entity
-# End time: 10:14:41 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:42 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 10:14:42 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:44 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory_entity
-# -- Compiling architecture memory_arch of memory_entity
-# End time: 10:14:44 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:45 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
+# Start time: 10:44:38 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity pc_entity
 # -- Compiling architecture pc_arch of pc_entity
-# End time: 10:14:45 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:44:38 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Test_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Test_tb 
+# Start time: 10:44:38 on Jul 31,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.common(body)
+# Loading work.test_tb(behavior)
+# Loading work.vhdl_microprocessor(vhdl_microprocessor_arch)
+# Loading work.controlunit_entity(controlunit_arch)
+# Loading work.pc_entity(pc_arch)
+# Loading work.rom_entity(rom_arch)
+# Loading work.decoder_entity(decoder_arch)
+# Loading work.alu_entity(alu_arch)
+# Loading work.memory_entity(memory_arch)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 4000 ns
+restart
+run
+vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:47 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
+# Start time: 10:51:06 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit_entity
+# -- Compiling architecture controlUnit_arch of controlUnit_entity
+# End time: 10:51:06 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controlunit_entity(controlunit_arch)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35 ns  Iteration: 1  Instance: /test_tb/DUT_microprocessor/DUT_memory
+vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:52:05 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit_entity
+# -- Compiling architecture controlUnit_arch of controlUnit_entity
+# End time: 10:52:05 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:52:27 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -572,242 +275,57 @@ vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hard
 # -- Loading package common
 # -- Compiling entity rom_entity
 # -- Compiling architecture rom_arch of rom_entity
-# End time: 10:14:47 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:52:27 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:14:48 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 10:14:48 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.test_tb
-# vsim work.test_tb 
-# Start time: 10:14:50 on Jul 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading ieee.std_logic_textio(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
+restart
 # Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
 # Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# Loading work.alu_entity(alu_arch)
-# Loading work.memory_entity(memory_arch)
-add wave -position end  sim:/test_tb/S_reset
-add wave -position end  sim:/test_tb/S_enable_controlUnit
-add wave -position end  sim:/test_tb/S_clock
-add wave -position end  sim:/test_tb/S_pipeline_stage
-add wave -position end  sim:/test_tb/S_pcOut_programCounter_romIn_address
-add wave -position end  sim:/test_tb/S_romOut_instruction_decoderIn_instruction
-add wave -position end  sim:/test_tb/S_decoderOut_opcode_aluIn_opcode
-add wave -position end  sim:/test_tb/S_decoderOut_dataImmediate_aluIn_dataImm
-add wave -position end  sim:/test_tb/S_decoderOut_regAddress_memoryIn_regReadSelect
-add wave -position end  sim:/test_tb/S_memoryOut_regData_aluIn_dataReg
-add wave -position end  sim:/test_tb/S_aluOut_data_memoryIn_regData_pcIn_newAddress
-add wave -position end  sim:/test_tb/S_aluOut_flags
-add wave -position end  sim:/test_tb/S_aluOut_regSelect_memoryIn_regWriteSelect
-add wave -position end  sim:/test_tb/S_aluOut_regWrite_memoryIn_writeEnable
-add wave -position end  sim:/test_tb/S_aluOut_shouldJump_pcIn_jump
-add wave -position end  sim:/test_tb/S_memory_writeEnable
 run
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:17:53 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory_entity
-# -- Compiling architecture memory_arch of memory_entity
-# End time: 10:17:53 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:17:56 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 10:17:56 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.test_tb(behavior)
-# Loading work.memory_entity(memory_arch)
-run
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:18:37 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 10:18:37 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.test_tb(behavior)
-run
-vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:41 on Jul 01,2021
-# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Common.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling package common
-# -- Compiling package body common
-# -- Loading package common
-# End time: 10:30:41 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:42 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity alu_entity
-# -- Compiling architecture alu_arch of alu_entity
-# End time: 10:30:43 on Jul 01,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
 vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:44 on Jul 01,2021
+# Start time: 10:52:49 on Jul 31,2021
 # vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity controlUnit_entity
 # -- Compiling architecture controlUnit_arch of controlUnit_entity
-# End time: 10:30:44 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:45 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Decoder.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity decoder_entity
-# -- Compiling architecture decoder_arch of decoder_entity
-# End time: 10:30:45 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:47 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory_entity
-# -- Compiling architecture memory_arch of memory_entity
-# End time: 10:30:47 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:48 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Pc.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity pc_entity
-# -- Compiling architecture pc_arch of pc_entity
-# End time: 10:30:48 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:49 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/Rom.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package common
-# -- Compiling entity rom_entity
-# -- Compiling architecture rom_arch of rom_entity
-# End time: 10:30:49 on Jul 01,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:30:51 on Jul 01,2021
-# vcom -reportprogress 300 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/simulation/modelsim/Test1_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package common
-# -- Compiling entity Test_tb
-# -- Compiling architecture behavior of Test_tb
-# End time: 10:30:51 on Jul 01,2021, Elapsed time: 0:00:00
+# End time: 10:52:49 on Jul 31,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.common(body)
-# Loading work.test_tb(behavior)
 # Loading work.controlunit_entity(controlunit_arch)
-# Loading work.pc_entity(pc_arch)
-# Loading work.rom_entity(rom_arch)
-# Loading work.decoder_entity(decoder_arch)
-# Loading work.alu_entity(alu_arch)
-# Loading work.memory_entity(memory_arch)
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_reset'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_enable_controlUnit'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_memoryOut_regData_aluIn_dataReg'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_aluOut_data_memoryIn_regData_pcIn_newAddress'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_aluOut_flags'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_aluOut_regWrite_memoryIn_writeEnable'. 
-# Warning in wave window restart: (vish-4014) No objects found matching '/test_tb/S_memory_writeEnable'. 
-add wave -position end  sim:/test_tb/S_controlUnitIn_reset
-add wave -position end  sim:/test_tb/S_controlUnit_enable
-add wave -position end  sim:/test_tb/S_clock
-add wave -position end  sim:/test_tb/S_pipeline_stage
-add wave -position end  sim:/test_tb/S_pcOut_programCounter_romIn_address
-add wave -position end  sim:/test_tb/S_romOut_instruction_decoderIn_instruction
-add wave -position end  sim:/test_tb/S_decoderOut_opcode_aluIn_opcode
-add wave -position end  sim:/test_tb/S_decoderOut_dataImmediate_aluIn_dataImm
-add wave -position end  sim:/test_tb/S_decoderOut_regAddress_memoryIn_regReadSelect
-add wave -position end  sim:/test_tb/S_memoryOut_regReadData_aluIn_dataReg
-add wave -position end  sim:/test_tb/S_aluOut_data_memoryIn_regWriteData_pcIn_newAddress
-add wave -position end  sim:/test_tb/S_aluOut_flags_debug
-add wave -position end  sim:/test_tb/S_aluOut_regSelect_memoryIn_regWriteSelect
-add wave -position end  sim:/test_tb/S_aluOut_regWrite_memoryIn_writeEnableCalculated
-add wave -position end  sim:/test_tb/S_aluOut_shouldJump_pcIn_jump
-add wave -position end  sim:/test_tb/S_memory_writeEnableCalculated
 run
-# End time: 10:31:58 on Jul 01,2021, Elapsed time: 0:17:08
-# Errors: 7, Warnings: 0
+vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:56:24 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit_entity
+# -- Compiling architecture controlUnit_arch of controlUnit_entity
+# End time: 10:56:24 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controlunit_entity(controlunit_arch)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 35 ns  Iteration: 1  Instance: /test_tb/DUT_microprocessor/DUT_memory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 55 ns  Iteration: 1  Instance: /test_tb/DUT_microprocessor/DUT_memory
+vcom -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:19:36 on Jul 31,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Simon/Desktop/Masterstudium/HardwareEntwurf/et5000_hardwareentwurf/ControlUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controlUnit_entity
+# -- Compiling architecture controlUnit_arch of controlUnit_entity
+# End time: 11:19:36 on Jul 31,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.controlunit_entity(controlunit_arch)
+run
+# End time: 11:25:53 on Jul 31,2021, Elapsed time: 0:41:15
+# Errors: 0, Warnings: 3

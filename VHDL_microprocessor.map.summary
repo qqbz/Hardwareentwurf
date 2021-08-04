@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Jun 26 10:32:17 2021
+Analysis & Synthesis Status : Successful - Fri Jul 30 14:32:42 2021
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : VHDL_microprocessor
 Top-level Entity Name : VHDL_microprocessor
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 1
+Total registers : 28
+Total pins : 87
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 6,144
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
